@@ -1,0 +1,10 @@
+medusa-terraform-deploy/
+├── main.tf
+├── ecs.tf
+├── rds.tf
+├── s3.tf
+├── ecr.tf
+├── variables.tf
+├── outputs.tf
+├── github-workflows/
+│   └── deploy.yml
