@@ -10,20 +10,20 @@ Deploy the Medusa.js backend on AWS ECS Fargate using Terraform
 + Step 3: Create Terraform Files
 + Create a folder terraform/ and inside it
 + 1.main.tf
-  provider "aws" {
-  region = "us-east-1"
-}
+    provider "aws" {
+    region = "us-east-1"
+  }
 
 + 2.variables.tf
-variable "db_password" {}
+  variable "db_password" {}
 
 + 3.ecr.tf
-resource "aws_ecr_repository" "medusa" {
+  resource "aws_ecr_repository" "medusa" {
   name = "medusa-backend"
 }
 
 + 4.rds.tf
-resource "aws_db_instance" "medusa_db" {
+  resource "aws_db_instance" "medusa_db" {
   allocated_storage    = 20
   engine               = "postgres"
   engine_version       = "13"
